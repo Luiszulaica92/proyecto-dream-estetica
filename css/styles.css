@@ -1,0 +1,355 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+html{
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+.body-index{
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+}
+
+
+
+/* -----------------------------------------------HEADER-------------------------------------------------------------------- */
+
+.header{
+display: flex;
+flex-direction: column;    
+}
+
+h1{
+color: rgb(221, 138, 107);
+font-style: italic;
+font-weight: bold;
+font-size: 3rem;
+text-align: center;
+}
+
+/* ---------------------------------NAV---------------------------------------------------------------------------- */
+
+.nav-container{
+width: 100%;
+height: 5vh;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.nav-container ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+.nav-container ul li a{
+text-decoration: none;
+color: rgb(250, 128, 128);
+font-size: 1.075rem;;
+}
+
+
+
+
+/* -----------------------------------LOGO INSTAGRAM----------------------------------------------------- */
+.instagram{
+position:fixed;
+right: 10px;
+top: 0%;
+font-size: 0.5rem;
+}
+
+.instagram img{
+width: 30px;
+height:30px
+}
+
+.instagram ul li{
+list-style-type: none;
+}
+
+/* --------------------------------------------------------SECCION SERVICIOS----------------------------------- */
+
+main{
+display: flex;
+flex-direction: row; 
+align-items: center;   
+}
+
+.titulo-servicios{
+display: flex;
+justify-content: center    ;
+padding: 10px;
+}
+
+.titulo-servicios{
+border: solid 1px black;
+background-color: #f8c9da;
+}
+
+.section-servicios{
+display: flex;
+flex-direction: column;  
+align-items: center;
+justify-content: center;
+padding: 10px;}
+
+
+/* -----------------------------------------------------------ARTICULOS--------------------------------------------------------- */
+
+
+.articulo__nombre{
+color:darksalmon;
+display: flex;
+justify-items: center
+}
+
+.articulo__nombre{
+padding: 10px;  
+justify-content: center;  
+}
+
+.articulo__descripcion{
+color: black;
+text-align:center;
+}
+
+.articulo__boton--leer-mas{
+color: blueviolet;
+display: flex;
+flex-direction: column;
+justify-content: center;
+}
+
+
+
+.articulo__imagen{
+width: 100%;
+height: 250px;
+
+}
+
+
+/* ----------------------------------------SLIDER---------------------------------------------------------- */
+.slider{
+    width: 100%;
+    height: 600px;
+    margin: 50px auto 0;
+    overflow: hidden;
+
+    
+}
+
+.slider ul{
+display: flex;
+padding: 0;
+width: 400%;
+
+animation: slider 16s infinite alternate linear;
+}
+
+.slider li{
+list-style: none;
+width: 100%;
+}
+
+.slider img{
+
+    width: 100%;
+    height: 75%;
+}
+
+@keyframes slider{
+0%{margin-left:0 ;}
+20%{margin-left:0 ;}
+
+25%{margin-left:-100% ;}
+45%{margin-left:-100% ;}
+
+50%{margin-left:-200% ;}
+70%{margin-left:-200% ;}
+
+75%{margin-left:-300% ;}
+100%{margin-left:-300% ;}
+
+}
+
+/* ------------------------------------------------------------------------------------------------------- */
+
+
+
+
+
+
+
+
+/* --------------------------------------------------------------FOOTER------------------------------------------------------------ */
+
+.footer{
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+padding: 20px 20px 20px;
+border: #b12a5b 1px solid;
+}
+
+footer{
+display: flex;
+flex-direction: column;
+}
+
+/* -----------------UBICACION-------------- */
+.nuestra-ubicacion{
+display: flex;
+padding: 10px;
+justify-content: center;
+}
+
+
+/* --------------------- CONTACTO------------------ */
+.form-contacto{
+display: flex;
+justify-content: center;
+pad: 10px;
+}
+
+.titulo-contacto{
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+
+.form-contacto h3{
+border: solid 1px black;
+background-color: #f8c9da;
+text-align: center;    
+padding: 10px;
+
+}
+
+/* ------------------------WHATSAPP------------------- */
+.contacto-wsp i{
+font-size: 3rem;
+color: darkgreen; 
+display: flex;
+justify-content: center;
+
+}
+
+.contacto-wsp h3{
+border: solid 1px black;
+background-color: #f8c9da;
+text-align: center;    
+padding: 10px;
+}
+/* --------------------------------------------------------------------------------------------------- */
+
+
+@media(min-width:1024px){
+h1{
+color: black;
+}
+
+.nav-container ul li{
+list-style: none;
+display: flex;
+flex-direction: column;
+margin: 0 90px ;
+position: relative;
+}
+
+.nav-container ul li::before{
+content: "";
+height: 3px;
+width: 0%;
+background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);;
+position: absolute;
+left: 0;
+bottom: -8px;
+transition: 0.4s ease-out;
+}
+
+.nav-container ul li:hover::before{
+width: 100%;
+}
+
+.instagram{
+position:absolute;
+right: 10px;
+top: 0%;
+font-size: 0.5rem;
+}
+
+main{
+display: grid;
+grid-template-columns: 3fr;
+grid-template-rows: 100%;
+grid-template-areas: "article article article";
+}
+
+.section-servicios{
+grid-area: article;
+}
+
+.titulo-servicios{
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 10px;
+}
+
+.section-servicios{
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 10px;
+}
+
+.slider img{
+width: 100%;
+height: 35%;
+}
+
+.articulo__imagen{
+width: 100%;
+height: 250px;
+}
+
+.articulo__nombre{
+padding: 10px;  
+justify-content: center;  
+}
+
+.footer{
+background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+padding: 10px 10px 10px;
+border: #b12a5b 1px solid;
+}
+
+footer{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+}
+
+.nuestra-ubicacion{
+position: relative;
+right: 10px; 
+}
+
+.form-contacto{
+display: flex;
+justify-content: center;
+}
+
+.titulo-contacto{
+display: flex;
+justify-content: center;
+padding: 10px;
+}
+
+}
