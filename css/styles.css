@@ -352,20 +352,46 @@ justify-content: center;
 padding: 10px;
 }
 
+/* ------------BOTON LEER MAS-------------*/
 .articulo__boton--leer-mas{
 display: inline-flex;
-align-items: center;
 justify-content: center;
-width: 100%;
-height: 80px;
-background: black;
-color: white;
-font-size: 20px;
+align-items: center;
+width: 40%;
+height: 30px;
+background: rgb(224, 110, 110);
+color: rgb(247, 247, 247);
+font-size: 15px;
+font-weight: 500;
 border: none;
 cursor: pointer;
-text-transform: uppercase;
 transition: .3s ease all;
-border-radius: 5px;
+border-radius: 100px;
+position: relative;
+overflow: hidden;
+}
+
+.articulo__boton--leer-mas::after{
+content: "";
+width: 100%;
+height: 100%;
+background: #f52148;
+position: absolute;
+z-index: 1;
+top: -30px;
+left: 0;
+transition: .3s ease-in-out;
+
+}
+
+.articulo__boton--leer-mas span {
+position: relative;
+z-index: 2;    
+transition: .3s ease all;
+}
+
+.articulo__boton--leer-mas:hover::after{
+top: 0;
 
 }
 
