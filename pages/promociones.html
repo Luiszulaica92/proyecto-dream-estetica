@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css"> 
     <title>Promociones</title>
 </head>
-<body class="body-index">
+<body class="container-fluid">
     <header class="header"> 
         <div>
             <h1>Dream Estética </h1>        
@@ -19,28 +20,53 @@
         <div>
         </header>
     <!-- BARRA DE NAVEGACION -->
-    <nav class="nav-container">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./servicios.html">Servicios</a></li> 
-                <li><a href="./promociones.html">Promociones</a></li>
-                <li><a href="./sobre-mi.html">Sobre mi</a></li> 
-                <li><a href="./contacto.html">Contacto</a></li>
+    <nav class="navbar navbar-expand-lg bg-light ">
+        <div class="container-fluid ">
+        <a class="navbar-brand" href="../index.html">Inicio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href=".promociones.html">Promociones</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./sobre-mi.html">Sobre mi</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="./contacto.html">Contacto</a>
+            </li>
             </ul>
+        </div>
+        </div>
     </nav>
     </header>
     <main class="cajaSeccion">
-        <h2>Promociones</h2>
-            <section>
-                <article>
-                    <h3>Promo 2x1</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum voluptatibus quae asperiores unde ullam labore exercitationem praesentium, at maiores veniam dolores quaerat consequatur. Rerum illum deserunt sint ad maiores, harum laborum, vel explicabo ex accusantium nisi vitae nihil officia quae suscipit? Consequuntur neque, eligendi vero quas perspiciatis cupiditate illo.</p>
-                </article>
-                <article>
-                    <h3>Promo 3x2</h3>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ducimus ipsum voluptatibus quae asperiores unde ullam labore exercitationem praesentium, at maiores veniam dolores quaerat consequatur. Rerum illum deserunt sint ad maiores, harum laborum, vel explicabo ex accusantium nisi vitae nihil officia quae suscipit? Consequuntur neque, eligendi vero quas perspiciatis cupiditate illo.</p>
-            </article>
-            </section>
+        <div class="container">
+            <div class="row">
+                <h2>Promociones</h2>
+            <div class="col">
+                <h3>Promo 1</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo quas at dolorem architecto nulla sed, nam eum iste ex, autem culpa omnis eaque dicta voluptates porro modi ad atque quam?
+            </div>
+            <div class="col">
+                <h3>Promo 2</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, optio.
+            </div>
+            <div class="col">
+                <h3>Promo 3</h3>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos consectetur cum corporis hic expedita pariatur commodi iusto sunt consequuntur inventore sed tempora velit unde error, animi sequi rerum magni vel.
+            </div>
+            <div>
+            <img src="../img/promo1.JPG" class="img-fluid" alt="...">
+            </div>
+            </div>
+        </div>
+        </div>
     </main>
     <footer class="footer">
         <div class="nuestra-ubicacion">
@@ -48,6 +74,7 @@
         </div>
         <div  class="form-contacto">
                 <div>
+                <h3>Envia tu consulta</h3>
                 <form>
                     <div>
                     <label for="campo-nomre">Nombre y Apellido</label>
@@ -70,6 +97,11 @@
                 </form>
                 </div>
         </div>
+        <div class="contacto-wsp">
+            <h3>Comunicate con nosotros</h3>
+            <a href=""><i class="bi-whatsapp"></i></a>
+        </div>
     </footer>
+    <script src="../js/bootstrap.js"></script>
 </body>
 </html>
