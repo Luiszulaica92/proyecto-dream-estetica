@@ -155,7 +155,12 @@ padding: 20px;
 
 }
 
-
+.main_background P{
+        color: #878787;
+        margin: 10px 10px 10px;
+        text-align: center;
+        align-items: center;  
+}
 
 p{
 color: #878787;
