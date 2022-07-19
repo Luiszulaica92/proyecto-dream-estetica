@@ -77,6 +77,32 @@ html {
   top: 0;
 }
 
+.card, .ucard {
+  background: rgb(202, 190, 190);
+  border-radius: 4px;
+  padding: 16px;
+  box-shadow: 1px 1px 12px 0px black;
+}
+
+.avatar, .ucard > img {
+  width: 100%;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.title, .ucard > h3 {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 8px;
+  opacity: 0.85;
+}
+
+.small, .ucard > small {
+  font-weight: 400;
+  font-size: 12px;
+  opacity: 0.75;
+}
+
 .carousel-item {
   height: 75%;
 }
@@ -88,7 +114,7 @@ html {
   }
 }
 .navbar .navbar-nav .nav-link {
-  color: black;
+  color: #878787;
 }
 
 .navbar .navbar-nav .nav-link:hover {
@@ -134,6 +160,9 @@ html {
   transition: all 0.5s;
 }
 
+.ucard {
+  max-width: 300px;
+}
 .header_background {
   display: flex;
   align-items: center;
@@ -187,7 +216,7 @@ p {
 }
 
 .rounded {
-  width: 50%;
+  width: 40%;
   height: 200px;
 }
 
@@ -296,6 +325,17 @@ p {
     padding: 10px 10px 10px;
     /* border: #b12a5b 1px solid; */
   }
+}
+.title-promociones {
+  padding: 20px;
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+.col .ucard {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=newstyles.css.map */
