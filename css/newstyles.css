@@ -1,3 +1,16 @@
+a {
+  color: rgb(223, 8, 8);
+}
+
+.contenedor {
+  width: 100vw;
+  height: 100vh;
+  padding: 0px 20vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -75,6 +88,30 @@ html {
 
 .articulo__boton--leer-mas:hover::after {
   top: 0;
+}
+
+.redes-sociales {
+  height: 100px;
+  margin: 0;
+}
+
+.redes-sociales img {
+  width: 45px;
+  height: 45px;
+}
+
+.redes-sociales ul {
+  text-align: center;
+  padding-top: 10px;
+  padding-left: 0px;
+}
+
+.redes-sociales ul li {
+  display: inline-block;
+}
+
+.redes-sociales ul li a {
+  padding: 10px;
 }
 
 .card, .ucard {
@@ -326,6 +363,13 @@ p {
     /* border: #b12a5b 1px solid; */
   }
 }
+.texto-quehacemos {
+  font-style: italic;
+  padding: 30px;
+  text-align: center;
+  justify-content: center;
+}
+
 .title-promociones {
   padding: 20px;
   letter-spacing: 12px;
@@ -336,6 +380,21 @@ p {
   padding: 20px;
   align-items: center;
   justify-content: center;
+}
+
+.title-sobre mi {
+  padding: 20px;
+  letter-spacing: 12px;
+  text-align: center;
+}
+
+.rounded {
+  width: 300px;
+  height: 300px;
+}
+
+.lh-1 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=newstyles.css.map */
