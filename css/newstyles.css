@@ -363,6 +363,11 @@ p {
     /* border: #b12a5b 1px solid; */
   }
 }
+.footer_background .container {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .texto-quehacemos {
   font-style: italic;
   padding: 30px;
@@ -376,7 +381,14 @@ p {
   text-align: center;
 }
 
-.col .ucard {
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.col-md-4 .ucard {
   padding: 20px;
   align-items: center;
   justify-content: center;

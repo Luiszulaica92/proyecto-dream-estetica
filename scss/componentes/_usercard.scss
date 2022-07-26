@@ -1,5 +1,6 @@
 .ucard{
 @extend .card;
+
 max-width: 300px;
 > img{
     @extend .avatar;
