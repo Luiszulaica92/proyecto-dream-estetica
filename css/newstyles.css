@@ -395,6 +395,9 @@ p {
 }
 
 .title-sobre mi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 20px;
   letter-spacing: 12px;
   text-align: center;
@@ -407,6 +410,57 @@ p {
 
 .lh-1 {
   text-align: center;
+}
+
+.titulo-nury {
+  display: flex;
+  justify-content: center;
+  color: #f2d7d0;
+  padding: 20px;
+}
+
+.elementor-widget-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.seccion-foto-sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imagen-sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 400px;
+  padding: 30px;
+}
+
+.mb-3 {
+  margin: 30px;
+}
+
+.footer_background-contacto {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+}
+
+.titulo-formulario {
+  display: flex;
+  font-size: 300;
+  font-weight: 400;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
 /*# sourceMappingURL=newstyles.css.map */

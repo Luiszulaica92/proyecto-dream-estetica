@@ -1,4 +1,7 @@
 .title-sobre mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     letter-spacing: 12px;
     text-align: center;
@@ -13,4 +16,37 @@ height: 300px;
     .lh-1{
 text-align: center;
 
+    }
+
+    .titulo-nury{
+        display: flex;
+    justify-content: center;
+    color: #f2d7d0;
+    padding: 20px;
+
+
+    }
+
+    .elementor-widget-wrap{
+display: flex;
+justify-content: center;
+align-items: center;
+    }
+
+.seccion-foto-sobremi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+    .imagen-sobremi{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 400px;   
+    padding: 30px;
     }
