@@ -1,0 +1,63 @@
+.footer_background{
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    padding: 20px 20px 20px;
+    }
+
+    /* -----------------UBICACION-------------- */
+.nuestra-ubicacion{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    }
+
+    /* --------------------- CONTACTO------------------ */
+.form-contacto{
+    display: flex;
+    justify-content: center;
+    pad: 10px;
+    }
+
+    .titulo-contacto{
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        }
+        
+        .form-contacto h3{
+        border: solid 1px black;
+        background-color: #f8c9da;
+        text-align: center;    
+        padding: 10px;
+        
+        }
+        
+        /* ------------------------WHATSAPP------------------- */
+        .contacto-wsp i{
+        font-size: 3rem;
+        color: darkgreen; 
+        display: flex;
+        justify-content: center;
+        
+        }
+        
+        .contacto-wsp h3{
+        border: solid 1px black;
+        background-color: #f8c9da;
+        text-align: center;    
+        padding: 10px;
+        }
+
+
+
+        @media(min-width:1024px){
+        .footer_background{
+            background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+            padding: 10px 10px 10px;
+            /* border: #b12a5b 1px solid; */
+            }
+        }
+
+.footer_background .container{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}        

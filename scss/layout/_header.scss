@@ -1,0 +1,31 @@
+.header_background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 150px;   
+    background-image: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+    }
+
+    .header_titulo{
+        color: #b19f9a;
+        font-size: 3rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-style: italic;
+        }
+        
+        .header_subtitulo{
+        color: #878787; 
+        font-style: italic;
+        font-size: 1rem;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        }
+
+        @media(min-width:1024px){
+            h1{
+            color: #f2d7d0
+            }
+        }

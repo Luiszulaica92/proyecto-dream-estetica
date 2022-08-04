@@ -1,0 +1,15 @@
+@mixin d-flex($justify, $align){
+    display: flex;
+
+    justify-content: $justify;
+    align-items: $align;
+}
+
+.contenedor{
+width: 100vw;
+height: 100vh;
+padding: 0px 20vw;
+
+@include d-flex(space-around,center )
+
+}
