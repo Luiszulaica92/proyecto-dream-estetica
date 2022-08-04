@@ -5,10 +5,11 @@
 .footer_background-contacto{
     display:flex;
 
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     margin: 20px;
     padding: 20px;
+
 
 
 }
@@ -22,4 +23,11 @@ justify-content: center;
 align-items: center;
 
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media(min-width:300px){
+
+    .footer_background-contacto{
+        display: grid
+    }
 }
